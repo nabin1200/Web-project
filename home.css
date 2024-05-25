@@ -1,0 +1,289 @@
+/* Basic Styles */
+body,html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+.logo {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------------Hero Section-------------------- */
+#hero-section {
+   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.video-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 7em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-weight: 900;
+    
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    /* margin-bottom: 1em; */
+    
+}
+
+.btn {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+#features-section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.feature-item {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+}
+
+.feature-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.feature-description {
+    font-size: 1em;
+}
+/* -----------------------------------why to choose nepal--------------- */
+
+
+
+#nepal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+#nepal h2{
+    font-size: 60px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.icons::-webkit-scrollbar{
+    width:0;
+    scroll-behavior: smooth;
+
+}
+.icons .icon {
+    text-align: center;
+    min-width:  24em;
+    height: 24em;
+    margin: 2em;
+    overflow: hidden;
+}
+
+.icon img {
+    
+    width: 24em;
+    height: 19em;
+    overflow: hidden;
+    
+}
+.icon p{
+    font-size: 32px;
+}
+#description{
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+
+/* ----------------------------Popular Destinations Section -------------*/
+#destinations-section {
+    padding: 2em 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.destinations-grid {
+    display: flex;
+    gap: 1em;
+    width: calc(10em * 6); /* Adjust based on number of items */
+    animation: slide 20s infinite linear;
+}
+
+.destination-item {
+    flex-shrink: 0;
+    width: 16em; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+.destination-image {
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    border-radius: 0.5em;
+}
+
+.destination-title {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    font-size: 1.2em;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    16.67% {
+        transform: translateX(-16.67%);
+    }
+    33.33% {
+        transform: translateX(-33.33%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    66.67% {
+        transform: translateX(-66.67%);
+    }
+    83.33% {
+        transform: translateX(-83.33%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* --------------------------Footer------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    main {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0.5em;
+    }
+    
+    footer {
+        font-size: 0.8em;
+    }
+}

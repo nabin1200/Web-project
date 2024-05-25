@@ -1,0 +1,243 @@
+/* Basic Styles */
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+/* ------------------------------header section----------------------- */
+
+.header {
+    background-color: #eef9f9;
+    color: #fff;
+}
+
+#top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #0a0a0a;
+}
+
+.social-buttons,
+#right {
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons {
+    gap: 10px;
+}
+
+#right {
+    gap: 40px;
+}
+
+#facebook i {
+    font-size: 32px;
+    color: blue;
+    border: none;
+    
+}
+
+#instagram i {
+    font-size: 32px;
+    color: red;
+    border: none;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+.nav-links {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #121111;
+    padding: 0 10px;
+    font-size: 20px;
+
+}
+.auth-button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #2c2b2b;
+}
+
+.auth-button {
+    background-color: rgb(54, 54, 71); 
+    border: 3px solid wheat; 
+    color: white; 
+    padding: 10px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 10px;
+
+
+}
+
+.auth-button:hover {
+    background-color: #f0c61a;
+    /* Green hover color */
+}
+
+/* -----------------------------------------------Hero Section---------------------------------------------------- */
+#hero-section-destination {
+    background: url('./destination/destination.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    /* margin: 1em 1em;
+    border-radius: 2%; */
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+/* Destinations List */
+/* ------------------------main section---------------------------------- */
+#about-destination{
+    padding: 3em 5em;
+    /* background-color: #ddd; */
+    margin: 2em 3em ;
+}
+#about-destination h1{
+    font-size: 5em;
+    color: blue;
+}
+.main{
+    
+    padding: 3em 5em;
+    /* background-color: #ddd; */
+    margin: 2em 3em ;
+
+}
+#left{
+    width: 10%;
+    height: 30em;
+    color: #121111;
+
+}
+#rignt{
+    width: 90%;
+    height: 30em;
+   
+}
+#about-destination p{
+    font-size: 1em;
+}
+#destinations-list {
+    padding: 2em 7em;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.destinations-grid {
+    display: flex;
+    gap: 2em;
+    overflow: auto;
+}
+.destinations-grid .destination-item{
+    text-align: center;
+    min-width:  24em;
+    height: 24em;
+    margin: 2em;
+    overflow: hidden;
+}
+.destinations-grid::-webkit-scrollbar{
+    width:0;
+    scroll-behavior: smooth;
+
+}
+.destination-item {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destination-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.destination-info {
+    padding: 1em;
+}
+
+.destination-title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.destination-description {
+    font-size: 1em;
+    color: #666;
+}
+
+/* ----------------------------------------------Footer-------------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0.5em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
