@@ -10,35 +10,95 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
+/* -----------header--------- */
+.header {
+    background-color: #eef9f9;
+    color: #fff;
 }
 
-.logo {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-list {
+#top-nav {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-item {
-    margin: 0;
+.logo h1 {
+    font-size: 30px;
+    color: #0a0a0a;
 }
 
-.nav-link {
-    color: white;
+.social-buttons,
+#right {
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons {
+    gap: 10px;
+}
+
+#right {
+    gap: 40px;
+}
+
+#facebook i {
+    font-size: 32px;
+    color: blue;
+    border: none;
+    
+}
+
+#instagram i {
+    font-size: 32px;
+    color: red;
+    border: none;
+}
+
+.social-buttons a {
     text-decoration: none;
+}
+
+.nav-links {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #121111;
+    padding: 0 10px;
+    font-size: 20px;
+
+}
+.auth-button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #2c2b2b;
+}
+
+.auth-button {
+    background-color: rgb(54, 54, 71); 
+    border: 3px solid wheat; 
+    color: white; 
+    padding: 10px 25px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 10px;
+
+
+}
+
+.auth-button:hover {
+    background-color: #f0c61a;
+    /* Green hover color */
 }
 
 /* Hero Section */

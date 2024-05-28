@@ -1,14 +1,16 @@
 /* Basic Styles */
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
+
 /* ------------------------------header section----------------------- */
 
 .header {
@@ -45,7 +47,7 @@ body {
     font-size: 32px;
     color: blue;
     border: none;
-    
+
 }
 
 #instagram i {
@@ -63,13 +65,14 @@ body {
     padding: 15px 0;
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     color: #121111;
     padding: 0 10px;
     font-size: 20px;
 
 }
+
 .auth-button a {
     text-decoration: none;
     color: #fff;
@@ -81,16 +84,16 @@ body {
 }
 
 .auth-button {
-    background-color: rgb(54, 54, 71); 
-    border: 3px solid wheat; 
-    color: white; 
-    padding: 10px 25px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
+    background-color: rgb(54, 54, 71);
+    border: 3px solid wheat;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
     border-radius: 10px;
 
 
@@ -126,36 +129,65 @@ body {
 
 /* Destinations List */
 /* ------------------------main section---------------------------------- */
-#about-destination{
+#about-destination {
     padding: 3em 5em;
     /* background-color: #ddd; */
-    margin: 2em 3em ;
+    margin: 2em 3em;
 }
-#about-destination h1{
+
+#about-destination h1 {
     font-size: 5em;
     color: blue;
 }
-.main{
-    
+
+.main {
+    display: flex;
     padding: 3em 5em;
     /* background-color: #ddd; */
-    margin: 2em 3em ;
+    margin: 2em 3em;
 
 }
-#left{
-    width: 10%;
-    height: 30em;
-    color: #121111;
+
+#left {
+    width: 15em;
+    height: 45em;
+    /* color: #121111; */
+    background-color: #ede4e4;
+    overflow: hidden;
+    line-height: 30px;
 
 }
-#rignt{
+
+#left a {
+    display: auto;
+    margin: 3px 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    
+}
+
+#main-right {
     width: 90%;
-    height: 30em;
-   
+    height: 45em;
+    background-color:white;
+    overflow: hidden;
+    color: rgb(237, 231, 231);
+    box-sizing: border-box;
 }
-#about-destination p{
+/* #right-top{
+    background-color: red;
+    color: black;
+    height: 5%;
+}
+#right-button{
+    height: 95%;
+} */
+
+#about-destination p {
     font-size: 1em;
 }
+
 #destinations-list {
     padding: 2em 7em;
 }
@@ -171,18 +203,21 @@ body {
     gap: 2em;
     overflow: auto;
 }
-.destinations-grid .destination-item{
+
+.destinations-grid .destination-item {
     text-align: center;
-    min-width:  24em;
+    min-width: 24em;
     height: 24em;
     margin: 2em;
     overflow: hidden;
 }
-.destinations-grid::-webkit-scrollbar{
-    width:0;
+
+.destinations-grid::-webkit-scrollbar {
+    width: 0;
     scroll-behavior: smooth;
 
 }
+
 .destination-item {
     position: relative;
     border: 1px solid #ddd;
@@ -193,7 +228,7 @@ body {
 
 .destination-image {
     width: 100%;
-    height: auto;
+    height: 15em;
     display: block;
     border-bottom: 1px solid #ddd;
 }

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header {
+    background-color: #ede1e1;
+    margin: 0;
+    padding: 0;
+    height: 10%;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    position: fixed;
+
+}
+main{
+    margin-top: 0em;
+}
+#header a{
+    padding: 0px 90px;
+    text-decoration: none;
+    color: black;
+}
+
+#hotel-section {
+    padding: 2em 0;
+    text-align: center;
+    
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2em;
+}
+
+.hotel-item {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+#image{
+    text-align: center;
+    min-width:100%;
+    height: 10em;
+    overflow: hidden;
+}
+
+.hotel-image {
+    width: 100%;
+    height: 10em;
+    display: block;
+    border-radius: 0.5em;
+}
+
+.hotel-details {
+    padding: 1em 0;
+}
+
+.hotel-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.hotel-description {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.hotel-duration,
+.hotel-price {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    padding: 0.75em 1.5em;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
